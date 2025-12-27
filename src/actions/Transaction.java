@@ -26,5 +26,9 @@ public abstract class Transaction {
         this.description = des;
     }
     
+    public Transaction getTransaction(){
+        return this;
+    }
+
     public abstract void showInfo();
 }

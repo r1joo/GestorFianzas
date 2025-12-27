@@ -11,6 +11,25 @@ public class Wallet {
         this.transactions = transactions;
     }
 
+    public void addTransaction(Transaction movement){
+        if(movement instanceof Ingreso){
+            this.totalAmount += movement.getAmount();
+        } else if(movement instanceof Gasto){
+            this.totalAmount -= movement.getAmount();
+        }
+    }
+
+    public void showTotalAmount(){
+        System.out.println("CANTIDAD TOTAL: " + totalAmount + "$");
+    }
+
+    public List<Transaction> getAllTransactions(){
+
+        
+
+        return transactions;
+    }
+
     public void showTransactions(){
         for(Transaction t: transactions){
             t.showInfo();
