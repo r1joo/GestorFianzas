@@ -29,6 +29,16 @@ El objetivo principal de este desarrollo ha sido consolidar conocimientos avanza
     * **Clases Abstractas:** Definición de plantillas base para las transacciones.
     * **Collections Framework:** Uso eficiente de `ArrayList` para manejo dinámico de memoria.
 
+## 🏗️ Estructura del Sistema
+|-- src
+    |-- actions
+        |-- Transaction.java
+        |-- Ingreso.java
+        |-- Gasto.java
+    |-- Main.java
+    |-- Wallet.java
+|-- README.md
+
 ## 🏗️ Arquitectura del Sistema
 
 El sistema sigue un diseño modular:
