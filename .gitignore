@@ -1,0 +1,17 @@
+# Archivos compilados (Bytecode)
+*.class
+
+# Carpetas de salida (donde se guardan los binarios)
+bin/
+out/
+build/
+
+# Archivos de configuración de usuario de VS Code (no se comparten)
+.vscode/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Logs de errores
+*.log
