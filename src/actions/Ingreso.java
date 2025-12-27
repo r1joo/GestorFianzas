@@ -9,5 +9,6 @@ public class Ingreso extends Transaction{
     public void showInfo(){
         System.out.println("Ingreso: " + getAmount());
         System.out.println("Description: " + getDescription());
+        System.out.println("-------------------------");
     }
 }

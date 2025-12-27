@@ -28,7 +28,7 @@ public class Main {
         miCartera.addTransaction(compraSuper);
 
         // 5. Mostrar el estado de la cartera
-        System.out.println("\n--- Resumen de la Cartera ---");
+        System.out.println("\n------- RESUMEN DE LA CARTERA ------");
         miCartera.showTotalAmount();
         miCartera.showTransactions(); // Ahora mismo saldrá vacía
     }

@@ -8,6 +8,7 @@ public class Gasto extends Transaction{
     public void showInfo(){
         System.out.println("Gasto: " + getAmount());
         System.out.println("Description: " + getDescription());
+        System.out.println("-------------------------");
     }
 
 }

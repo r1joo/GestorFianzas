@@ -4,11 +4,19 @@ import java.util.*;
 public class Wallet {
     private double totalAmount;
 
-    private List<Transaction> transactions = new ArrayList<>();
+    private List<Transaction> transactions;
 
     public Wallet(double total){
         this.totalAmount = total;
-        this.transactions;
+        this.transactions = new ArrayList<>();
+    }
+
+    public double getTotalAmount(){
+        return this.totalAmount;
+    }
+
+    public List<Transaction> getAllTransactions(){
+        return transactions;
     }
 
     public void addTransaction(Transaction movement){
@@ -22,10 +30,11 @@ public class Wallet {
     }
 
     public void showTotalAmount(){
-        System.out.println("CANTIDAD TOTAL: " + totalAmount + "$");
+        System.out.println("--- Total Amount: " + totalAmount + "$");
     }
 
     public void showTransactions(){
+        System.out.println("--- Movements");
         for(Transaction t: transactions){
             t.showInfo();
         }
